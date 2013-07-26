@@ -1,5 +1,19 @@
-library(plyr)
 
+#' Inserts Ovation Measurements for each row in a DataFrame
+#' 
+#' @param context
+#' @param csv.path
+#' @param start.time
+#' @param end.time
+#' @param protocol.uri
+#' @param protocol.parameters
+#' @param devices
+#' @param device.parameters
+#' @param container.uri
+#' @param source.label.column
+#' @param source.id.column
+#' @return newly inserted Epoch
+#' @export
 ImportCSV <- function(context, 
                       csv.path, 
                       start.time, 
@@ -55,4 +69,6 @@ ImportCSV <- function(context,
                             NewUrl(temp.file),
                             "text/csv")
   }
+  
+  return(epoch)
 }
