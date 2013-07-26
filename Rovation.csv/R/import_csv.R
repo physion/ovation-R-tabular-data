@@ -33,7 +33,7 @@ ImportCSV <- function(context,
   protocol <- context$getObjectWithURI(protocol.uri)
   
   # Insert Epoch
-  cat("Inserting Epoch...\n")
+  cat("\n\nInserting Epoch...\n")
   epoch <- container$insertEpoch(start.time,
                                  end.time,
                                  protocol,
