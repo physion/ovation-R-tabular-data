@@ -5,7 +5,7 @@ Version: 1.0.0
 Date: 2013-07-23
 Author: Physion Consulting LLC
 Depends:
-    Rovation
+    Rovation,
     plyr
 Maintainer: Physion <info@physion.us>
 Description: R tools for tabular data in the Ovation Scientific Data Management System

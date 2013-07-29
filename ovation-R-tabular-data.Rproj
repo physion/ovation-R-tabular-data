@@ -15,3 +15,4 @@ LaTeX: pdfLaTeX
 BuildType: Package
 PackagePath: Rovation.csv
 PackageInstallArgs: --no-multiarch
+PackageRoxygenize: rd,namespace
