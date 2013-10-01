@@ -12,8 +12,8 @@ Requirements
 Installation
 ---------------
 
-1. [Download](https://github.com/physion/ovation-R-tabular-data/archive/master.zip) the latest source release or clone the Git repository.
-2. Within R, install the included `Rovation.csv_1.0.0.tar.gz` distribution package.
+1. [Download](https://github.com/physion/ovation-R-tabular-data/releases/download/v1.0/Rovation.csv_1.0.0.tar.gz) the latest package release.
+2. Within R, install the downloaded `Rovation.csv_1.0.0.tar.gz` distribution package.
 
 Usage
 ---------
