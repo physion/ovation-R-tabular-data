@@ -41,7 +41,19 @@ ImportCSV <- function(context,
                                  List2Map(device.parameters))
   
   # Insert a measurement for each row
-  measurements <- d_ply(df, c(df[[source.label.column]], df[[source.id.column]]), 
+  if(is.character(source.label.column)) {
+    srcLabel <- source.label.column
+  } else {
+    srcLabel <- colnames(df)[source.label.column]
+  }
+  
+  if(is.character(source.id.column)) {
+    idLabel <- source.id.column
+  } else {
+    idLabel <- colnames(df)[source.id.column]
+  }
+    
+  measurements <- d_ply(df, c(srcLabel, idLabel), 
                         function(r) {
                           source.label <- unique(as.character(r[[source.label.column]]))
                           source.id <- unique(as.character(r[[source.id.column]]))
