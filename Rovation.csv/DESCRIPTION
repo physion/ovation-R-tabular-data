@@ -1,9 +1,9 @@
 Package: Rovation.csv
 Type: Package
 Title: R tools for tabular data in the Ovation Scientific Data Management System
-Version: 1.0.0
-Date: 2013-07-23
-Author: Physion Consulting LLC
+Version: 1.0.1
+Date: 2013-10-01
+Author: Physion LLC
 Depends:
     Rovation,
     plyr
